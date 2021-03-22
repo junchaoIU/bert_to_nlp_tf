@@ -1,0 +1,16 @@
+{
+  "model_name": "classifier",
+  "epochs": 10,
+  "checkpoint_every": 1000,
+  "eval_every": 1000,
+  "learning_rate": 5e-5,
+  "sequence_length": 128,
+  "batch_size": 32,
+  "num_classes": 10,
+  "warmup_rate": 0.1,
+  "output_path": "output/cls",
+  "bert_model_path": "D:/project/python_wp/nlp/data/chinese_L-12_H-768_A-12/",
+  "train_data": "data/cls/train.txt",
+  "eval_data": "data/cls/dev.txt",
+  "ckpt_model_path": "ckpt_model/cls"
+}

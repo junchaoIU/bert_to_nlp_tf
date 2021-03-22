@@ -1,0 +1,16 @@
+{
+  "model_name": "classifier",
+  "epochs": 10,
+  "checkpoint_every": 100,
+  "eval_every": 100,
+  "learning_rate": 5e-5,
+  "sequence_length": 128,
+  "batch_size": 32,
+  "num_classes": 2,
+  "warmup_rate": 0.1,
+  "output_path": "output/hop_classifier",
+  "bert_model_path": "D:/project/python_wp/nlp/data/chinese_L-12_H-768_A-12/",
+  "train_data": "../data/hop_classifier/train.txt",
+  "eval_data": "../data/hop_classifier/dev.txt",
+  "ckpt_model_path": "ckpt_model/hop_classifier"
+}

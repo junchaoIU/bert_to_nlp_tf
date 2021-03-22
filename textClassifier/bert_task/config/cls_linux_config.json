@@ -1,0 +1,16 @@
+{
+  "model_name": "classifier",
+  "epochs": 10,
+  "checkpoint_every": 1000,
+  "eval_every": 1000,
+  "learning_rate": 5e-5,
+  "sequence_length": 128,
+  "batch_size": 32,
+  "num_classes": 10,
+  "warmup_rate": 0.1,
+  "output_path": "output/hop_classifier",
+  "bert_model_path": "../../data/chinese_L-12_H-768_A-12/",
+  "train_data": "data/hop_classifier/train.txt",
+  "eval_data": "data/hop_classifier/dev.txt",
+  "ckpt_model_path": "ckpt_model/hop_classifier"
+}

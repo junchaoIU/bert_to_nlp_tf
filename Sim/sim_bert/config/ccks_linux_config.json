@@ -1,0 +1,16 @@
+{
+  "model_name": "sentence_pair",
+  "epochs": 20,
+  "checkpoint_every": 100,
+  "eval_every": 100,
+  "learning_rate": 5e-5,
+  "sequence_length": 64,
+  "batch_size": 128,
+  "num_classes": 2,
+  "warmup_rate": 0.1,
+  "output_path": "output/ccks_rel",
+  "bert_model_path": "../../data/chinese_L-12_H-768_A-12/",
+  "train_data": "data/rel/train_rel.txt",
+  "eval_data": "data/rel/valid_rel.txt",
+  "ckpt_model_path": "ckpt_model/ccks_rel"
+}
