@@ -1,4 +1,4 @@
-# 基于 Bert NLP 项目 的  tensorflow 实现
+# NLP 项目 的  tensorflow 实现
 
 ## 一、介绍
 
