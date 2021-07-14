@@ -197,7 +197,6 @@ with tf.Graph().as_default():
             # 训练模型
             print("start training model")
             for batchTrain in nextBatch(trainReviews, trainLabels, config.batchSize):
-#                 loss, acc, prec, recall, f_beta = trainStep(batchTrain[0], batchTrain[1])
                 loss = trainStep(batchTrain[0], batchTrain[1])
                 currentStep = tf.train.global_step(sess, globalStep) 
                 print("train: step: {}, loss: {}".format(

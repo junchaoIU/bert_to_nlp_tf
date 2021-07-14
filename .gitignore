@@ -17,6 +17,7 @@
 **/__pycache__/
 **/outputs/bilstm_crf/**
 **/log/
+**/.vscode/
 
 # .tfstate files
 *.tfstate

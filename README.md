@@ -125,7 +125,35 @@
     python predict_get_tensor.py --config_path=config/ccks_config.json
 ```
 
-#### 软件 or python 包 版本
+### 2.4 [阅读理解](Sim/)
+
+#### 2.3.1 [基于 Bert 的文本匹配方法](textClassifier/machine_reading/)
+
+- 目录文件：
+  - bert/                   bert 项目
+  - config/                 配置 文件
+  - data/                   数据文件
+  - trainer.py              训练 方法
+  - predict.py              预测
+  - model.py                BertSentencePair  类
+  - data_helper.py          训练数据 处理类
+  - metrics.py              评测
+
+- 训练
+
+1. 编写 config 目录下得 json 文件
+2. 运行
+```s
+    python trainer.py --config_path=config/cmrc_config_linux.json
+```
+
+- 预测
+
+```s
+    python predict_get_tensor.py --config_path=config/cmrc_config_linux.json
+```
+
+## 三、软件 or python 包 版本
 
 1.  python==3.6
 2.  tensorflow <= 1.15.0

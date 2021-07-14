@@ -28,7 +28,7 @@ class Config():
         self.window = 5
         self.embedding_dir = self.output_path
         self.tag = "word"
-        self.train = f"{self.output_path}train.csv"
+        self.train = f"{self.output_path}train.txt"
         self.embedingSource = '%s%s_word2vec_size%d_win%d'%(self.output_path,self.tag,self.embeddingSize,self.window) +'.txt'
 
         '''
@@ -64,7 +64,7 @@ class Config():
             self.training.epoches =10
             
         ## 模型 资源文件
-        self.dataSource = f"{self.output_path}train.csv"
+        self.dataSource = f"{self.output_path}train.txt"
         self.testFileSourceOutput = self.output_path+self.layerType+"_pred_score"+self.textStatus+".csv"
         self.stopWordSource = self.output_path+"stopword.txt"
         self.word2idxSource = self.output_path+"word2idx"+self.textStatus+".json"
